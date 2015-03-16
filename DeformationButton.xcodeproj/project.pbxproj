@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82E599251AB6AB5100D6B808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599241AB6AB5100D6B808 /* main.m */; };
+		82E599281AB6AB5100D6B808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599271AB6AB5100D6B808 /* AppDelegate.m */; };
+		82E5992B1AB6AB5100D6B808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5992A1AB6AB5100D6B808 /* ViewController.m */; };
+		82E5992E1AB6AB5100D6B808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E5992C1AB6AB5100D6B808 /* Main.storyboard */; };
+		82E599301AB6AB5100D6B808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E5992F1AB6AB5100D6B808 /* Images.xcassets */; };
+		82E599331AB6AB5100D6B808 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E599311AB6AB5100D6B808 /* LaunchScreen.xib */; };
+		82E5993F1AB6AB5100D6B808 /* DeformationButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5993E1AB6AB5100D6B808 /* DeformationButtonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82E599391AB6AB5100D6B808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82E599171AB6AB5100D6B808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82E5991E1AB6AB5100D6B808;
+			remoteInfo = DeformationButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82E5991F1AB6AB5100D6B808 /* DeformationButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeformationButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E599231AB6AB5100D6B808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E599241AB6AB5100D6B808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82E599261AB6AB5100D6B808 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82E599271AB6AB5100D6B808 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82E599291AB6AB5100D6B808 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82E5992A1AB6AB5100D6B808 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82E5992D1AB6AB5100D6B808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82E5992F1AB6AB5100D6B808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82E599321AB6AB5100D6B808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		82E599381AB6AB5100D6B808 /* DeformationButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeformationButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E5993D1AB6AB5100D6B808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E5993E1AB6AB5100D6B808 /* DeformationButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeformationButtonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82E5991C1AB6AB5100D6B808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E599351AB6AB5100D6B808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82E599161AB6AB5100D6B808 = {
+			isa = PBXGroup;
+			children = (
+				82E599211AB6AB5100D6B808 /* DeformationButton */,
+				82E5993B1AB6AB5100D6B808 /* DeformationButtonTests */,
+				82E599201AB6AB5100D6B808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82E599201AB6AB5100D6B808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82E5991F1AB6AB5100D6B808 /* DeformationButton.app */,
+				82E599381AB6AB5100D6B808 /* DeformationButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82E599211AB6AB5100D6B808 /* DeformationButton */ = {
+			isa = PBXGroup;
+			children = (
+				82E599261AB6AB5100D6B808 /* AppDelegate.h */,
+				82E599271AB6AB5100D6B808 /* AppDelegate.m */,
+				82E599291AB6AB5100D6B808 /* ViewController.h */,
+				82E5992A1AB6AB5100D6B808 /* ViewController.m */,
+				82E5992C1AB6AB5100D6B808 /* Main.storyboard */,
+				82E5992F1AB6AB5100D6B808 /* Images.xcassets */,
+				82E599311AB6AB5100D6B808 /* LaunchScreen.xib */,
+				82E599221AB6AB5100D6B808 /* Supporting Files */,
+			);
+			path = DeformationButton;
+			sourceTree = "<group>";
+		};
+		82E599221AB6AB5100D6B808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82E599231AB6AB5100D6B808 /* Info.plist */,
+				82E599241AB6AB5100D6B808 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82E5993B1AB6AB5100D6B808 /* DeformationButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				82E5993E1AB6AB5100D6B808 /* DeformationButtonTests.m */,
+				82E5993C1AB6AB5100D6B808 /* Supporting Files */,
+			);
+			path = DeformationButtonTests;
+			sourceTree = "<group>";
+		};
+		82E5993C1AB6AB5100D6B808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82E5993D1AB6AB5100D6B808 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82E5991E1AB6AB5100D6B808 /* DeformationButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82E599421AB6AB5100D6B808 /* Build configuration list for PBXNativeTarget "DeformationButton" */;
+			buildPhases = (
+				82E5991B1AB6AB5100D6B808 /* Sources */,
+				82E5991C1AB6AB5100D6B808 /* Frameworks */,
+				82E5991D1AB6AB5100D6B808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeformationButton;
+			productName = DeformationButton;
+			productReference = 82E5991F1AB6AB5100D6B808 /* DeformationButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82E599371AB6AB5100D6B808 /* DeformationButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82E599451AB6AB5100D6B808 /* Build configuration list for PBXNativeTarget "DeformationButtonTests" */;
+			buildPhases = (
+				82E599341AB6AB5100D6B808 /* Sources */,
+				82E599351AB6AB5100D6B808 /* Frameworks */,
+				82E599361AB6AB5100D6B808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82E5993A1AB6AB5100D6B808 /* PBXTargetDependency */,
+			);
+			name = DeformationButtonTests;
+			productName = DeformationButtonTests;
+			productReference = 82E599381AB6AB5100D6B808 /* DeformationButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82E599171AB6AB5100D6B808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MOZ;
+				TargetAttributes = {
+					82E5991E1AB6AB5100D6B808 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					82E599371AB6AB5100D6B808 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 82E5991E1AB6AB5100D6B808;
+					};
+				};
+			};
+			buildConfigurationList = 82E5991A1AB6AB5100D6B808 /* Build configuration list for PBXProject "DeformationButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82E599161AB6AB5100D6B808;
+			productRefGroup = 82E599201AB6AB5100D6B808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82E5991E1AB6AB5100D6B808 /* DeformationButton */,
+				82E599371AB6AB5100D6B808 /* DeformationButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82E5991D1AB6AB5100D6B808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E5992E1AB6AB5100D6B808 /* Main.storyboard in Resources */,
+				82E599331AB6AB5100D6B808 /* LaunchScreen.xib in Resources */,
+				82E599301AB6AB5100D6B808 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E599361AB6AB5100D6B808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82E5991B1AB6AB5100D6B808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E5992B1AB6AB5100D6B808 /* ViewController.m in Sources */,
+				82E599281AB6AB5100D6B808 /* AppDelegate.m in Sources */,
+				82E599251AB6AB5100D6B808 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E599341AB6AB5100D6B808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E5993F1AB6AB5100D6B808 /* DeformationButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82E5993A1AB6AB5100D6B808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82E5991E1AB6AB5100D6B808 /* DeformationButton */;
+			targetProxy = 82E599391AB6AB5100D6B808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82E5992C1AB6AB5100D6B808 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E5992D1AB6AB5100D6B808 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82E599311AB6AB5100D6B808 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E599321AB6AB5100D6B808 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82E599401AB6AB5100D6B808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82E599411AB6AB5100D6B808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82E599431AB6AB5100D6B808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeformationButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82E599441AB6AB5100D6B808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeformationButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		82E599461AB6AB5100D6B808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeformationButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeformationButton.app/DeformationButton";
+			};
+			name = Debug;
+		};
+		82E599471AB6AB5100D6B808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeformationButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeformationButton.app/DeformationButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82E5991A1AB6AB5100D6B808 /* Build configuration list for PBXProject "DeformationButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E599401AB6AB5100D6B808 /* Debug */,
+				82E599411AB6AB5100D6B808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82E599421AB6AB5100D6B808 /* Build configuration list for PBXNativeTarget "DeformationButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E599431AB6AB5100D6B808 /* Debug */,
+				82E599441AB6AB5100D6B808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82E599451AB6AB5100D6B808 /* Build configuration list for PBXNativeTarget "DeformationButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E599461AB6AB5100D6B808 /* Debug */,
+				82E599471AB6AB5100D6B808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82E599171AB6AB5100D6B808 /* Project object */;
+}
