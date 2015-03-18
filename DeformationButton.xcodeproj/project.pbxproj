@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82363E591AB9273C00A4B137 /* button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82363E571AB9273C00A4B137 /* button_bg@2x.png */; };
+		82363E5A1AB9273C00A4B137 /* logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82363E581AB9273C00A4B137 /* logo_@2x.png */; };
 		82E599251AB6AB5100D6B808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599241AB6AB5100D6B808 /* main.m */; };
 		82E599281AB6AB5100D6B808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599271AB6AB5100D6B808 /* AppDelegate.m */; };
 		82E5992B1AB6AB5100D6B808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5992A1AB6AB5100D6B808 /* ViewController.m */; };
@@ -14,6 +16,8 @@
 		82E599301AB6AB5100D6B808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E5992F1AB6AB5100D6B808 /* Images.xcassets */; };
 		82E599331AB6AB5100D6B808 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E599311AB6AB5100D6B808 /* LaunchScreen.xib */; };
 		82E5993F1AB6AB5100D6B808 /* DeformationButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5993E1AB6AB5100D6B808 /* DeformationButtonTests.m */; };
+		82E5994B1AB6ABAF00D6B808 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5994A1AB6ABAF00D6B808 /* DeformationButton.m */; };
+		82E5994F1AB6B70300D6B808 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5994E1AB6B70300D6B808 /* MMMaterialDesignSpinner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82363E571AB9273C00A4B137 /* button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg@2x.png"; sourceTree = "<group>"; };
+		82363E581AB9273C00A4B137 /* logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_@2x.png"; sourceTree = "<group>"; };
 		82E5991F1AB6AB5100D6B808 /* DeformationButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeformationButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E599231AB6AB5100D6B808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82E599241AB6AB5100D6B808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		82E599381AB6AB5100D6B808 /* DeformationButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeformationButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E5993D1AB6AB5100D6B808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82E5993E1AB6AB5100D6B808 /* DeformationButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeformationButtonTests.m; sourceTree = "<group>"; };
+		82E599491AB6ABAF00D6B808 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		82E5994A1AB6ABAF00D6B808 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		82E5994D1AB6B70300D6B808 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		82E5994E1AB6B70300D6B808 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82363E561AB9273C00A4B137 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82363E571AB9273C00A4B137 /* button_bg@2x.png */,
+				82363E581AB9273C00A4B137 /* logo_@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		82E599161AB6AB5100D6B808 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,8 @@
 		82E599211AB6AB5100D6B808 /* DeformationButton */ = {
 			isa = PBXGroup;
 			children = (
+				82363E561AB9273C00A4B137 /* Resources */,
+				82E599481AB6AB6A00D6B808 /* DeformationButton */,
 				82E599261AB6AB5100D6B808 /* AppDelegate.h */,
 				82E599271AB6AB5100D6B808 /* AppDelegate.m */,
 				82E599291AB6AB5100D6B808 /* ViewController.h */,
@@ -117,6 +138,25 @@
 				82E5993D1AB6AB5100D6B808 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82E599481AB6AB6A00D6B808 /* DeformationButton */ = {
+			isa = PBXGroup;
+			children = (
+				82E5994C1AB6B70300D6B808 /* MMMaterialDesignSpinner-master */,
+				82E599491AB6ABAF00D6B808 /* DeformationButton.h */,
+				82E5994A1AB6ABAF00D6B808 /* DeformationButton.m */,
+			);
+			path = DeformationButton;
+			sourceTree = "<group>";
+		};
+		82E5994C1AB6B70300D6B808 /* MMMaterialDesignSpinner-master */ = {
+			isa = PBXGroup;
+			children = (
+				82E5994D1AB6B70300D6B808 /* MMMaterialDesignSpinner.h */,
+				82E5994E1AB6B70300D6B808 /* MMMaterialDesignSpinner.m */,
+			);
+			path = "MMMaterialDesignSpinner-master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E5992E1AB6AB5100D6B808 /* Main.storyboard in Resources */,
+				82363E5A1AB9273C00A4B137 /* logo_@2x.png in Resources */,
 				82E599331AB6AB5100D6B808 /* LaunchScreen.xib in Resources */,
+				82363E591AB9273C00A4B137 /* button_bg@2x.png in Resources */,
 				82E599301AB6AB5100D6B808 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E5994F1AB6B70300D6B808 /* MMMaterialDesignSpinner.m in Sources */,
 				82E5992B1AB6AB5100D6B808 /* ViewController.m in Sources */,
 				82E599281AB6AB5100D6B808 /* AppDelegate.m in Sources */,
+				82E5994B1AB6ABAF00D6B808 /* DeformationButton.m in Sources */,
 				82E599251AB6AB5100D6B808 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +456,7 @@
 				82E599441AB6AB5100D6B808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82E599451AB6AB5100D6B808 /* Build configuration list for PBXNativeTarget "DeformationButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +465,7 @@
 				82E599471AB6AB5100D6B808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

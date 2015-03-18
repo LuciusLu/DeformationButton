@@ -2,7 +2,7 @@
 //  DeformationButtonTests.m
 //  DeformationButtonTests
 //
-//  Created by 陆浩志 on 15/3/16.
+//  Created by LuciusLu on 15/3/16.
 //  Copyright (c) 2015年 MOZ. All rights reserved.
 //
 
