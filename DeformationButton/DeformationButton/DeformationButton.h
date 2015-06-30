@@ -18,4 +18,6 @@
 
 @property(nonatomic, retain)UIButton *forDisplayButton;
 
+- (instancetype)initWithFrame:(CGRect)frame withColor:(UIColor*)color;
+
 @end

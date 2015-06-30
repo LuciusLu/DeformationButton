@@ -16,19 +16,13 @@
     UIView *bgView;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame withColor:(UIColor*)color
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initSetting];
+        [self initSettingWithColor:(UIColor*)color];
     }
     return self;
-}
-
-- (void)initBtn{
-    self.forDisplayButton = [[UIButton alloc]initWithFrame:self.bounds];
-    self.forDisplayButton.userInteractionEnabled = NO;
-    [self addSubview:self.forDisplayButton];
 }
 
 -(CGRect)frame{
@@ -38,10 +32,29 @@
     return frame;
 }
 
-- (void)initSetting{
+- (UIImage*)imageWithColor:(UIColor*)color cornerRadius:(CGFloat)cornerRadius{
+    CGRect rect = CGRectMake(0, 0, cornerRadius*2+10, cornerRadius*2+10);
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:cornerRadius];
+    path.lineWidth = 0;
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+
+    [path fill];
+    [path stroke];
+    [path addClip];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (void)initSettingWithColor:(UIColor*)color{
     scale = 1.2;
     bgView = [[UIView alloc]initWithFrame:self.bounds];
-    bgView.backgroundColor = [UIColor blueColor];
+    bgView.backgroundColor = color;
     bgView.userInteractionEnabled = NO;
     bgView.hidden = YES;
     [self addSubview:bgView];
@@ -62,7 +75,12 @@
     
     [self addTarget:self action:@selector(loadingAction) forControlEvents:UIControlEventTouchUpInside];
     
-    [self initBtn];
+    self.forDisplayButton = [[UIButton alloc]initWithFrame:self.bounds];
+    self.forDisplayButton.userInteractionEnabled = NO;
+    [self.forDisplayButton setBackgroundImage:[[self imageWithColor:color cornerRadius:3] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)] forState:UIControlStateNormal];
+    [self addSubview:self.forDisplayButton];
+    
+    self.contentColor = color;
 }
 
 -(void)setContentColor:(UIColor *)contentColor{

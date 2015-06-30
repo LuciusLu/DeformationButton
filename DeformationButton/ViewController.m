@@ -10,7 +10,7 @@
 #import "DeformationButton.h"
 
 @interface ViewController (){
-    DeformationButton *deformationBtn;
+//    DeformationButton *deformationBtn;
 }
 
 @end
@@ -37,20 +37,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    deformationBtn = [[DeformationButton alloc]initWithFrame:CGRectMake(100, 100, 140, 36)];
-    deformationBtn.contentColor = [self getColor:@"52c332"];
-    deformationBtn.progressColor = [UIColor whiteColor];
+    DeformationButton *deformationBtn = [[DeformationButton alloc]initWithFrame:CGRectMake(100, 100, 140, 36) withColor:[self getColor:@"e13536"]];
     [self.view addSubview:deformationBtn];
-    
-    [deformationBtn.forDisplayButton setTitle:@"微信注册" forState:UIControlStateNormal];
+
+    [deformationBtn.forDisplayButton setTitle:@"微博注册" forState:UIControlStateNormal];
     [deformationBtn.forDisplayButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
     [deformationBtn.forDisplayButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [deformationBtn.forDisplayButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 6, 0, 0)];
-    
-    [deformationBtn.forDisplayButton setImage:[UIImage imageNamed:@"logo_.png"] forState:UIControlStateNormal];
-    UIImage *bgImage = [UIImage imageNamed:@"button_bg.png"];
-    [deformationBtn.forDisplayButton setBackgroundImage:[bgImage resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)] forState:UIControlStateNormal];
-    
+    [deformationBtn.forDisplayButton setImage:[UIImage imageNamed:@"微博logo.png"] forState:UIControlStateNormal];
+
     [deformationBtn addTarget:self action:@selector(btnEvent) forControlEvents:UIControlEventTouchUpInside];
 }
 

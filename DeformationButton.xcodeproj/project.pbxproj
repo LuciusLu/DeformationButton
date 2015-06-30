@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82363E591AB9273C00A4B137 /* button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82363E571AB9273C00A4B137 /* button_bg@2x.png */; };
-		82363E5A1AB9273C00A4B137 /* logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82363E581AB9273C00A4B137 /* logo_@2x.png */; };
+		8203716F1B4246780020948D /* 微博logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8203716E1B4246780020948D /* 微博logo@2x.png */; };
+		820371711B4246F40020948D /* 微信logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 820371701B4246F40020948D /* 微信logo@2x.png */; };
 		82E599251AB6AB5100D6B808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599241AB6AB5100D6B808 /* main.m */; };
 		82E599281AB6AB5100D6B808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E599271AB6AB5100D6B808 /* AppDelegate.m */; };
 		82E5992B1AB6AB5100D6B808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E5992A1AB6AB5100D6B808 /* ViewController.m */; };
@@ -31,8 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		82363E571AB9273C00A4B137 /* button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg@2x.png"; sourceTree = "<group>"; };
-		82363E581AB9273C00A4B137 /* logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_@2x.png"; sourceTree = "<group>"; };
+		8203716E1B4246780020948D /* 微博logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博logo@2x.png"; sourceTree = "<group>"; };
+		820371701B4246F40020948D /* 微信logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微信logo@2x.png"; sourceTree = "<group>"; };
 		82E5991F1AB6AB5100D6B808 /* DeformationButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeformationButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E599231AB6AB5100D6B808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82E599241AB6AB5100D6B808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 		82363E561AB9273C00A4B137 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82363E571AB9273C00A4B137 /* button_bg@2x.png */,
-				82363E581AB9273C00A4B137 /* logo_@2x.png */,
+				820371701B4246F40020948D /* 微信logo@2x.png */,
+				8203716E1B4246780020948D /* 微博logo@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,10 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E5992E1AB6AB5100D6B808 /* Main.storyboard in Resources */,
-				82363E5A1AB9273C00A4B137 /* logo_@2x.png in Resources */,
 				82E599331AB6AB5100D6B808 /* LaunchScreen.xib in Resources */,
-				82363E591AB9273C00A4B137 /* button_bg@2x.png in Resources */,
 				82E599301AB6AB5100D6B808 /* Images.xcassets in Resources */,
+				8203716F1B4246780020948D /* 微博logo@2x.png in Resources */,
+				820371711B4246F40020948D /* 微信logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
