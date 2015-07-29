@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82E5991E1AB6AB5100D6B808"
-               BuildableName = "DeformationButton.app"
-               BlueprintName = "DeformationButton"
-               ReferencedContainer = "container:DeformationButton.xcodeproj">
+               BlueprintIdentifier = "82FADCCA1B688278006A0959"
+               BuildableName = "MozSinaBtn.app"
+               BlueprintName = "MozSinaBtn"
+               ReferencedContainer = "container:MozSinaBtn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82E599371AB6AB5100D6B808"
-               BuildableName = "DeformationButtonTests.xctest"
-               BlueprintName = "DeformationButtonTests"
-               ReferencedContainer = "container:DeformationButton.xcodeproj">
+               BlueprintIdentifier = "82FADCE31B688278006A0959"
+               BuildableName = "MozSinaBtnTests.xctest"
+               BlueprintName = "MozSinaBtnTests"
+               ReferencedContainer = "container:MozSinaBtn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82E599371AB6AB5100D6B808"
-               BuildableName = "DeformationButtonTests.xctest"
-               BlueprintName = "DeformationButtonTests"
-               ReferencedContainer = "container:DeformationButton.xcodeproj">
+               BlueprintIdentifier = "82FADCE31B688278006A0959"
+               BuildableName = "MozSinaBtnTests.xctest"
+               BlueprintName = "MozSinaBtnTests"
+               ReferencedContainer = "container:MozSinaBtn.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "82E5991E1AB6AB5100D6B808"
-            BuildableName = "DeformationButton.app"
-            BlueprintName = "DeformationButton"
-            ReferencedContainer = "container:DeformationButton.xcodeproj">
+            BlueprintIdentifier = "82FADCCA1B688278006A0959"
+            BuildableName = "MozSinaBtn.app"
+            BlueprintName = "MozSinaBtn"
+            ReferencedContainer = "container:MozSinaBtn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "82E5991E1AB6AB5100D6B808"
-            BuildableName = "DeformationButton.app"
-            BlueprintName = "DeformationButton"
-            ReferencedContainer = "container:DeformationButton.xcodeproj">
+            BlueprintIdentifier = "82FADCCA1B688278006A0959"
+            BuildableName = "MozSinaBtn.app"
+            BlueprintName = "MozSinaBtn"
+            ReferencedContainer = "container:MozSinaBtn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "82E5991E1AB6AB5100D6B808"
-            BuildableName = "DeformationButton.app"
-            BlueprintName = "DeformationButton"
-            ReferencedContainer = "container:DeformationButton.xcodeproj">
+            BlueprintIdentifier = "82FADCCA1B688278006A0959"
+            BuildableName = "MozSinaBtn.app"
+            BlueprintName = "MozSinaBtn"
+            ReferencedContainer = "container:MozSinaBtn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

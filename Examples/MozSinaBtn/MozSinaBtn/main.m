@@ -1,9 +1,9 @@
 //
 //  main.m
-//  DeformationButton
+//  MozSinaBtn
 //
-//  Created by LuciusLu on 15/3/16.
-//  Copyright (c) 2015年 MOZ. All rights reserved.
+//  Created by 陆浩志 on 15/7/29.
+//  Copyright (c) 2015年 Moz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DeformationButton.xcscheme</key>
+		<key>MozSinaBtn.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>82E5991E1AB6AB5100D6B808</key>
+		<key>82FADCCA1B688278006A0959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82E599371AB6AB5100D6B808</key>
+		<key>82FADCE31B688278006A0959</key>
 		<dict>
 			<key>primary</key>
 			<true/>

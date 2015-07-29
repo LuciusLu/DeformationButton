@@ -1,19 +1,19 @@
 //
-//  DeformationButtonTests.m
-//  DeformationButtonTests
+//  MozSinaBtnTests.m
+//  MozSinaBtnTests
 //
-//  Created by LuciusLu on 15/3/16.
-//  Copyright (c) 2015年 MOZ. All rights reserved.
+//  Created by 陆浩志 on 15/7/29.
+//  Copyright (c) 2015年 Moz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface DeformationButtonTests : XCTestCase
+@interface MozSinaBtnTests : XCTestCase
 
 @end
 
-@implementation DeformationButtonTests
+@implementation MozSinaBtnTests
 
 - (void)setUp {
     [super setUp];
