@@ -14,6 +14,7 @@
     CGFloat defaultR;
     CGFloat scale;
     UIView *bgView;
+    UIImage *btnBackgroundImage;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame withColor:(UIColor*)color
@@ -57,6 +58,7 @@
     bgView.backgroundColor = color;
     bgView.userInteractionEnabled = NO;
     bgView.hidden = YES;
+    bgView.layer.cornerRadius = 3;
     [self addSubview:bgView];
     
     defaultW = bgView.frame.size.width;
@@ -111,6 +113,10 @@
 }
 
 - (void)startLoading{
+    if (btnBackgroundImage == nil) {
+        btnBackgroundImage = [self.forDisplayButton backgroundImageForState:UIControlStateNormal];
+    }
+    
     _isLoading = YES;
     
     bgView.hidden = NO;
@@ -119,10 +125,12 @@
     animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
     animation.fromValue = [NSNumber numberWithFloat:defaultR];
     animation.toValue = [NSNumber numberWithFloat:defaultH*scale*0.5];
-    animation.duration = 0.2;
+    animation.duration = 0.3;
     [bgView.layer setCornerRadius:defaultH*scale*0.5];
     [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
 
+    [self.forDisplayButton setBackgroundImage:nil forState:UIControlStateNormal];
+    
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         bgView.layer.bounds = CGRectMake(0, 0, defaultW*scale, defaultH*scale);
     } completion:^(BOOL finished) {
@@ -148,6 +156,14 @@
     } completion:^(BOOL finished) {
     }];
     
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
+    animation.fromValue = [NSNumber numberWithFloat:defaultH*scale*0.5];
+    animation.toValue = [NSNumber numberWithFloat:defaultR];
+    animation.duration = 0.3;
+    [bgView.layer setCornerRadius:defaultR];
+    [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
+    
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         bgView.layer.bounds = CGRectMake(0, 0, defaultW*scale, defaultH*scale);
     } completion:^(BOOL finished) {
@@ -161,6 +177,9 @@
         [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
             bgView.layer.bounds = CGRectMake(0, 0, defaultW, defaultH);
         } completion:^(BOOL finished) {
+            if (btnBackgroundImage != nil) {
+                [self.forDisplayButton setBackgroundImage:btnBackgroundImage forState:UIControlStateNormal];
+            }
             bgView.hidden = YES;
             _isLoading = NO;
         }];

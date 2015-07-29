@@ -36,7 +36,6 @@ static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotatio
 
 - (void)initialize {
     _timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    
     [self.layer addSublayer:self.progressLayer];
     
     // See comment in resetAnimations on why this notification is used.
@@ -165,6 +164,7 @@ static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotatio
         _progressLayer.strokeColor = self.tintColor.CGColor;
         _progressLayer.fillColor = nil;
         _progressLayer.lineWidth = 1.5f;
+//        _progressLayer.shouldRasterize = true;
     }
     return _progressLayer;
 }
