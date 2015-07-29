@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "LuciusLu" => "luckysixdays@gmail.com" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "7.0"
-  s.source       = { :git => "https://github.com/LuciusLu/DeformationButton.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/LuciusLu/DeformationButton.git", :commit => "12b8320b7505367310cfd681a94a8f3829cae492" }
   s.source_files  = 'Source/MMMaterialDesignSpinner-master/*.{h,m}' , 'Source/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit'
