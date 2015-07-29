@@ -28,7 +28,6 @@
 
 -(CGRect)frame{
     CGRect frame = [super frame];
-//    CGRectMake((SELF_WIDTH-286)/2+146, SELF_HEIGHT-84, 140, 36)
     self.forDisplayButton.frame = frame;
     return frame;
 }
@@ -53,12 +52,16 @@
 }
 
 - (void)initSettingWithColor:(UIColor*)color{
+    self.clipsToBounds = NO;
+    self.layer.masksToBounds = NO;
+    
     scale = 1.2;
     bgView = [[UIView alloc]initWithFrame:self.bounds];
     bgView.backgroundColor = color;
     bgView.userInteractionEnabled = NO;
     bgView.hidden = YES;
     bgView.layer.cornerRadius = 3;
+    bgView.layer.masksToBounds = NO;
     [self addSubview:bgView];
     
     defaultW = bgView.frame.size.width;
