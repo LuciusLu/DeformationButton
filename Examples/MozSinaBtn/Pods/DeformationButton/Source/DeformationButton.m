@@ -28,7 +28,6 @@
 
 -(CGRect)frame{
     CGRect frame = [super frame];
-//    CGRectMake((SELF_WIDTH-286)/2+146, SELF_HEIGHT-84, 140, 36)
     self.forDisplayButton.frame = frame;
     return frame;
 }
@@ -53,12 +52,16 @@
 }
 
 - (void)initSettingWithColor:(UIColor*)color{
+    self.clipsToBounds = NO;
+    self.layer.masksToBounds = NO;
+    
     scale = 1.2;
     bgView = [[UIView alloc]initWithFrame:self.bounds];
     bgView.backgroundColor = color;
     bgView.userInteractionEnabled = NO;
     bgView.hidden = YES;
     bgView.layer.cornerRadius = 3;
+    bgView.layer.masksToBounds = NO;
     [self addSubview:bgView];
     
     defaultW = bgView.frame.size.width;
@@ -171,7 +174,7 @@
         animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
         animation.fromValue = [NSNumber numberWithFloat:bgView.layer.cornerRadius];
         animation.toValue = [NSNumber numberWithFloat:defaultR];
-        animation.duration = 0.2;
+        animation.duration = 0.3;
         [bgView.layer setCornerRadius:defaultR];
         [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
         [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A1A18DEEFBA250D73001395"
+               BlueprintIdentifier = "E3EB06483F4044E221B7A7C5"
                BuildableName = "libPods-DeformationButton.a"
                BlueprintName = "Pods-DeformationButton"
                ReferencedContainer = "container:Pods.xcodeproj">

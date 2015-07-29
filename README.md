@@ -3,6 +3,12 @@
 ![Alt text](/DeformationButton.gif)
 ![Alt text](/DeformationButton2.gif)
 
+## Installation
+
+Available in Cocoa Pods
+
+pod 'DeformationButton'
+
 ---------------------------------------
 ## import 
 #import "DeformationButton.h"
