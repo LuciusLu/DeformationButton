@@ -1,0 +1,10 @@
+PODS:
+  - DeformationButton (1.0)
+
+DEPENDENCIES:
+  - DeformationButton
+
+SPEC CHECKSUMS:
+  DeformationButton: 4f9ea649230933be4cd68e342826f031d45e5f40
+
+COCOAPODS: 0.37.2
