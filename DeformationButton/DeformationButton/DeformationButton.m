@@ -171,7 +171,7 @@
         animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
         animation.fromValue = [NSNumber numberWithFloat:bgView.layer.cornerRadius];
         animation.toValue = [NSNumber numberWithFloat:defaultR];
-        animation.duration = 0.2;
+        animation.duration = 0.3;
         [bgView.layer setCornerRadius:defaultR];
         [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
         [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
