@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821A575E1BB0FEFD006283F1 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 821A575A1BB0FEFD006283F1 /* DeformationButton.m */; settings = {ASSET_TAGS = (); }; };
+		821A575F1BB0FEFD006283F1 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 821A575D1BB0FEFD006283F1 /* MMMaterialDesignSpinner.m */; settings = {ASSET_TAGS = (); }; };
 		82FADCD11B688278006A0959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FADCD01B688278006A0959 /* main.m */; };
 		82FADCD41B688278006A0959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FADCD31B688278006A0959 /* AppDelegate.m */; };
 		82FADCD71B688278006A0959 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FADCD61B688278006A0959 /* ViewController.m */; };
@@ -16,7 +18,6 @@
 		82FADCEB1B688278006A0959 /* MozSinaBtnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FADCEA1B688278006A0959 /* MozSinaBtnTests.m */; };
 		82FADCFF1B68829E006A0959 /* 微信logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FADCFB1B68829E006A0959 /* 微信logo@2x.png */; };
 		82FADD001B68829E006A0959 /* 微博logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FADCFC1B68829E006A0959 /* 微博logo@2x.png */; };
-		D523A031AC9E5600E75B6405 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD64598131B5BB744A1EBCA5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4512F38982C79BB1470495D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		821A57591BB0FEFD006283F1 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		821A575A1BB0FEFD006283F1 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		821A575C1BB0FEFD006283F1 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		821A575D1BB0FEFD006283F1 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		82FADCCB1B688278006A0959 /* MozSinaBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MozSinaBtn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FADCCF1B688278006A0959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FADCD01B688278006A0959 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,8 +50,6 @@
 		82FADCEA1B688278006A0959 /* MozSinaBtnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MozSinaBtnTests.m; sourceTree = "<group>"; };
 		82FADCFB1B68829E006A0959 /* 微信logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微信logo@2x.png"; sourceTree = "<group>"; };
 		82FADCFC1B68829E006A0959 /* 微博logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博logo@2x.png"; sourceTree = "<group>"; };
-		C15397C35812840C89485E36 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		DD64598131B5BB744A1EBCA5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D523A031AC9E5600E75B6405 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,13 +70,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821A57581BB0FEFD006283F1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				821A57591BB0FEFD006283F1 /* DeformationButton.h */,
+				821A575A1BB0FEFD006283F1 /* DeformationButton.m */,
+				821A575B1BB0FEFD006283F1 /* MMMaterialDesignSpinner-master */,
+			);
+			name = Source;
+			path = ../../../Source;
+			sourceTree = "<group>";
+		};
+		821A575B1BB0FEFD006283F1 /* MMMaterialDesignSpinner-master */ = {
+			isa = PBXGroup;
+			children = (
+				821A575C1BB0FEFD006283F1 /* MMMaterialDesignSpinner.h */,
+				821A575D1BB0FEFD006283F1 /* MMMaterialDesignSpinner.m */,
+			);
+			path = "MMMaterialDesignSpinner-master";
+			sourceTree = "<group>";
+		};
 		82FADCC21B688278006A0959 = {
 			isa = PBXGroup;
 			children = (
 				82FADCCD1B688278006A0959 /* MozSinaBtn */,
 				82FADCE71B688278006A0959 /* MozSinaBtnTests */,
 				82FADCCC1B688278006A0959 /* Products */,
-				E7348B8D74B2DFAFB0BC1E3B /* Pods */,
 				E7BDAFDD317101EB3D2F3362 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +112,7 @@
 		82FADCCD1B688278006A0959 /* MozSinaBtn */ = {
 			isa = PBXGroup;
 			children = (
+				821A57581BB0FEFD006283F1 /* Source */,
 				82FADCFA1B68829E006A0959 /* Resources */,
 				82FADCD21B688278006A0959 /* AppDelegate.h */,
 				82FADCD31B688278006A0959 /* AppDelegate.m */,
@@ -140,19 +161,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E7348B8D74B2DFAFB0BC1E3B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C15397C35812840C89485E36 /* Pods.debug.xcconfig */,
-				4512F38982C79BB1470495D2 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		E7BDAFDD317101EB3D2F3362 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD64598131B5BB744A1EBCA5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,11 +175,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82FADCEE1B688278006A0959 /* Build configuration list for PBXNativeTarget "MozSinaBtn" */;
 			buildPhases = (
-				3BFDD18A235FBCC8CB440191 /* Check Pods Manifest.lock */,
 				82FADCC71B688278006A0959 /* Sources */,
 				82FADCC81B688278006A0959 /* Frameworks */,
 				82FADCC91B688278006A0959 /* Resources */,
-				91FC9959A7E3DA3DED6B267A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,46 +265,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3BFDD18A235FBCC8CB440191 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		91FC9959A7E3DA3DED6B267A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		82FADCC71B688278006A0959 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821A575F1BB0FEFD006283F1 /* MMMaterialDesignSpinner.m in Sources */,
 				82FADCD71B688278006A0959 /* ViewController.m in Sources */,
 				82FADCD41B688278006A0959 /* AppDelegate.m in Sources */,
+				821A575E1BB0FEFD006283F1 /* DeformationButton.m in Sources */,
 				82FADCD11B688278006A0959 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +394,6 @@
 		};
 		82FADCEF1B688278006A0959 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C15397C35812840C89485E36 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MozSinaBtn/Info.plist;
@@ -427,7 +404,6 @@
 		};
 		82FADCF01B688278006A0959 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4512F38982C79BB1470495D2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MozSinaBtn/Info.plist;

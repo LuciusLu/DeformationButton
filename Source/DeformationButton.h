@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MMMaterialDesignSpinner.h"
 
-@interface DeformationButton : UIControl
+@interface DeformationButton : UIButton
 
 @property(nonatomic, assign)BOOL isLoading;
 @property(nonatomic, retain)MMMaterialDesignSpinner *spinnerView;

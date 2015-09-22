@@ -10,7 +10,7 @@
 #import "DeformationButton.h"
 
 @interface ViewController (){
-//    DeformationButton *deformationBtn;
+    DeformationButton *deformationBtn;
 }
 
 @end
@@ -37,7 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DeformationButton *deformationBtn = [[DeformationButton alloc]initWithFrame:CGRectMake(100, 100, 140, 36) withColor:[self getColor:@"e13536"]];
+    deformationBtn = [[DeformationButton alloc]initWithFrame:CGRectMake(100, 100, 140, 36) withColor:[self getColor:@"e13536"]];
     [self.view addSubview:deformationBtn];
 
     [deformationBtn.forDisplayButton setTitle:@"微博注册" forState:UIControlStateNormal];
@@ -47,10 +47,18 @@
     [deformationBtn.forDisplayButton setImage:[UIImage imageNamed:@"微博logo.png"] forState:UIControlStateNormal];
 
     [deformationBtn addTarget:self action:@selector(btnEvent) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(testTap)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)testTap{
+    NSLog(@"testTap");
 }
 
 - (void)btnEvent{
     NSLog(@"btnEvent");
+//    deformationBtn.isLoading = NO;
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{

@@ -137,20 +137,26 @@
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         bgView.layer.bounds = CGRectMake(0, 0, defaultW*scale, defaultH*scale);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
-            bgView.layer.bounds = CGRectMake(0, 0, defaultH*scale, defaultH*scale);
-            self.forDisplayButton.transform = CGAffineTransformMakeScale(0, 0);
-            self.forDisplayButton.alpha = 0;
-        } completion:^(BOOL finished) {
-            self.forDisplayButton.hidden = YES;
-            [self.spinnerView startAnimating];
-        }];
+        if (_isLoading) {
+            [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+                bgView.layer.bounds = CGRectMake(0, 0, defaultH*scale, defaultH*scale);
+                self.forDisplayButton.transform = CGAffineTransformMakeScale(0, 0);
+                self.forDisplayButton.alpha = 0;
+            } completion:^(BOOL finished) {
+                if (_isLoading) {
+                    self.forDisplayButton.hidden = YES;
+                    [self.spinnerView startAnimating];
+                }
+            }];
+        }
     }];
 }
 
 - (void)stopLoading{
     [self.spinnerView stopAnimating];
     self.forDisplayButton.hidden = NO;
+    
+    _isLoading = NO;
 
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:
      UIViewAnimationOptionCurveLinear animations:^{
@@ -170,22 +176,26 @@
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         bgView.layer.bounds = CGRectMake(0, 0, defaultW*scale, defaultH*scale);
     } completion:^(BOOL finished) {
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
-        animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
-        animation.fromValue = [NSNumber numberWithFloat:bgView.layer.cornerRadius];
-        animation.toValue = [NSNumber numberWithFloat:defaultR];
-        animation.duration = 0.3;
-        [bgView.layer setCornerRadius:defaultR];
-        [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
-        [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
-            bgView.layer.bounds = CGRectMake(0, 0, defaultW, defaultH);
-        } completion:^(BOOL finished) {
-            if (btnBackgroundImage != nil) {
-                [self.forDisplayButton setBackgroundImage:btnBackgroundImage forState:UIControlStateNormal];
-            }
-            bgView.hidden = YES;
-            _isLoading = NO;
-        }];
+        if (!_isLoading) {
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+            animation.timingFunction = [CAMediaTimingFunction     functionWithName:kCAMediaTimingFunctionLinear];
+            animation.fromValue = [NSNumber numberWithFloat:bgView.layer.cornerRadius];
+            animation.toValue = [NSNumber numberWithFloat:defaultR];
+            animation.duration = 0.3;
+            [bgView.layer setCornerRadius:defaultR];
+            [bgView.layer addAnimation:animation forKey:@"cornerRadius"];
+            [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+                bgView.layer.bounds = CGRectMake(0, 0, defaultW, defaultH);
+            } completion:^(BOOL finished) {
+                if (!_isLoading) {
+                    if (btnBackgroundImage != nil) {
+                        [self.forDisplayButton setBackgroundImage:btnBackgroundImage forState:UIControlStateNormal];
+                    }
+                    bgView.hidden = YES;
+                    //            _isLoading = NO;
+                }
+            }];
+        }
     }];
 }
 
