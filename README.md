@@ -5,7 +5,7 @@
 
 ## Installation
 
-Available in Cocoa Pods
+Available in CocoaPods
 
 pod 'DeformationButton'
 
